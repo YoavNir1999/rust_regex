@@ -6,3 +6,4 @@ fn main() {
     println!("{}",x);
     println!("{:?}",return_char_type("3".to_owned()));
 }
+
