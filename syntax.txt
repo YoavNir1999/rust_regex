@@ -1,0 +1,26 @@
+brackets idea:
+    [] for strict matching for example:
+        ["ello"] to strictly match a string with "ello"
+        [9 > lower > 5] to strictly match between 5 to 9 lowercase letters in a row
+    
+    {} for optional matching for example:
+        {"@"} can or cannot include "@"
+        {5 > num} match from 0 to 5 numbers in a row
+
+    () for unlimited match for example:
+        ("(.)(.)") can match from 1 to inifinitly long recurrences
+        (upper) match from 1 to inifinitly long string of uppercase letters
+
+    types of characters:
+        all - everything except space
+        space - a space
+        chars - either upper or lower case letters
+        upper - only uppercase letters
+        lower - only lowercase letters
+        num - numbers
+        symbol - symbols
+        ! - match the opposite for example !symbol, everything that isn't a symbol
+        or - can match either thing for example [symbol or num or space] can match either symbol, num and space
+
+    chaining matches:
+        email address - "(chars or num) + ["@"] + [10 > chars or num > 2] + ["."] + [5 > chars > 3] + {"."} + {5 > chars}"
